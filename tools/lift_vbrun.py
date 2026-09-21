@@ -7,7 +7,7 @@ the engine is a 16-bit NE DLL and the game is what it loads.
 import os, sys, contextlib, time
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-PCRECOMP = r"G:\recomp\pc\tools\tools"
+PCRECOMP = r"%RECOMP_ROOT%\pc\tools\tools"
 for p in (os.path.join(PCRECOMP, 'ne'), os.path.join(PCRECOMP, 'disasm'),
           os.path.join(PCRECOMP, 'lift')):
     sys.path.insert(0, p)

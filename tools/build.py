@@ -11,8 +11,8 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 SRC  = os.path.join(ROOT, 'work', 'src')
 OBJ  = os.path.join(ROOT, 'work', 'obj')
 INC  = os.path.join(ROOT, 'work', 'runtime')
-GCC  = r"C:\msys64\mingw64\bin\gcc.exe"
-os.environ['PATH'] = r"C:\msys64\mingw64\bin;" + os.environ['PATH']
+GCC  = r"%MSYS2_ROOT%\mingw64\bin\gcc.exe"
+os.environ['PATH'] = r"%MSYS2_ROOT%\mingw64\bin;" + os.environ['PATH']
 os.makedirs(OBJ, exist_ok=True)
 
 FLAGS = ['-c', '-O2', '-g1', '-std=c11', '-I', INC, '-Wall',
